@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8"> <!--aufbau der seite (utf-8 standard)-->
+    <meta name="keywords" content="AEG, Schule, Links, Outlook, dBildungscloud"> <!--wörter unter denen man meine Seite findet-->
+    <meta name="description" content="Wichtige Links für das AEG Neubrandenburg."> <!--beschreibung im Browser und der URL-->
+    <meta name="author" content="PER">
+    <meta http-equiv="refresh" content="1000000000000"> <!--aktualisieren der Seite-->
+    <meta name="robots" content="index, follow"> <!--durchsuchen der ganzen Seite + nebenseiten/ unfollow ist nur die Startseite-->
+    <meta name="revisit-after" content="1 month"> <!--suchmaschiene lädt nach 5 Monaten die Seite neu-->
+    <link rel="stylesheet" type="text/css" href="Links2CSS.css">
+    <title>Links für die Schule</title>
+  </head>
+  <body>
+    <script type='text/javascript' id="datum"> // Kreirt eine Uhr
+        function GetDay(intDay){
+          var DayArray = new Array("Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag");
+          return DayArray[intDay];
+        }
+        function GetMonth(intMonth){
+          var MonthArray = new Array("Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember");
+          return MonthArray[intMonth];
+        }
+        function getDateStrWithDOW(){
+          var today = new Date();
+          var year = today.getYear();
+          if(year<1000) year+=1900
+          var todayStr = GetDay(today.getDay()) + ", ";
+          todayStr += today.getDate() + ". " + GetMonth(today.getMonth());
+          todayStr += ", " + year;
+          return todayStr;
+        }
+       document.write("<strong>" + getDateStrWithDOW() + "</strong>");
+    </script>
+    <span id="uhr" style="font-weight: bold;"></span> <!-- Plaziert die Uhr -->
+
+
+    <h1 id="headline">
+        Weblinks für das Albert-Einstein Gymnasium Neubrandenburg
+    </h1>
+    <div id="all-in">
+        <div class="links" id="allgInfos">
+            <h2 class="titel">
+                Allgemeine Links
+            </h2>
+        
+            <div class="wrapper">
+                <a href="https://aeg-nb.de/" target="_blank" class="hyperlink" id="aeg">Homepage des AEGs Neubrandenburg</a>
+                <a href="https://aeg-nb.de/vertrettungsplan/" target="_blank" class="hyperlink" id="vertretung">Vertretungsplan</a>
+                <a href="https://dbildungscloud.de/login" target="_blank" class="hyperlink" id="cloud">dBildungscloud</a>
+                <a href="https://exc.schulen-mse.de/" target="_blank" class="hyperlink" id="outlook">Outlook</a>
+                <a href="https://noten.schulen-mse.de/aeg/webinfo" target="_blank" class="hyperlink" id="fuxnoten">FuxNoten</a>
+                <a href="https://lernen.schulen-mse.de/" target="_blank" class="hyperlink" id="">Ilias</a>
+            </div>
+        </div>
+
+        <div class="links" id="informatik">
+            <h2 class="titel">
+                Informatik
+            </h2>
+            <div class="wrapper">
+                <a href="https://vscode.dev/" target="_blank" class="hyperlink" id="vscode">Visual Studio Code Online</a>
+                <a href="https://code.visualstudio.com/docs" target="_blank" class="hyperlink" id="vscodeHelp">Guide für Visual Studio Code</a>
+                <a href="https://wiki.selfhtml.org/wiki/Startseite" target="_blank" class="hyperlink" id="selfhtml">Hilfe bei HTML, CSS, JS und SVG</a>
+                <a href="https://lab.open-roberta.org/" target="_blank" class="hyperlink" id="open-roberta">Open-Roberta-Lab</a>
+                <a href="https://wokwi.com/" target="_blank" class="hyperlink" id="wokwi">Wokwi</a>
+            </div>
+        </div>
+
+        <div class="links" id="Astronomie">
+            <h2 class="titel">
+                Astronomie
+            </h2>
+            <div class="wrapper">
+                <a href="https://stellarium-web.org/" target="_blank" class="hyperlink" id="stellarium">Stellarium</a>
+                <a href="https://theskylive.com/3dsolarsystem" target="_blank" class="hyperlink" id="solar">3D Solar System Simulator</a>
+            </div>
+        </div>
+
+        <div class="links" id="transl">
+            <h2 class="titel">
+                Übersetzer
+            </h2>
+            <div class="wrapper">
+                <a href="https://translate.google.de/" target="_blank" class="hyperlink" id="cloud">Google Übersetzer</a>
+                <a href="https://de.pons.com/" target="_blank" class="hyperlink" id="pons">Pons</a>
+                <a href="https://www.leo.org/englisch-deutsch" target="_blank" class="hyperlink" id="fuxnoten">Leo</a>
+            </div>
+        </div>
+
+        <div class="links" id="sonstigeLinks">
+            <h2 class="titel">
+                Sonstige Links
+            </h2>
+            <div class="wrapper">
+                <a href="https://diagnose.cornelsen.de/" target="_blank" class="hyperlink" id="cornelsen">Cornelsen - Diagnose und Förder</a>
+                <a href="https://app.simpleclub.com/home" target="_blank" class="hyperlink" id="simpleclub">Simpleclub</a>
+                <a href="https://www.bpb.de/" target="_blank" class="hyperlink" id="bpb">Bundeszentrale für politische Bildung</a>
+                <a href="http://www.fooplot.com/" target="_blank" class="hyperlink" id="vscode">Footplot / Funktionenzeichner</a>
+                <a href="https://kahoot.com/" target="_blank" class="hyperlink" id="kahoot">Kahoot</a>
+                <a href="https://www.geoguessr.com/" target="_blank" class="hyperlink" id="geoguessr">GeoGuessr</a>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
